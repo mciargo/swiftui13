@@ -51,6 +51,7 @@ struct CuadrosPrecio: View {
     var body: some View {
         
     VStack{
+        Spacer()
         HStack{
             PriceView(title: "Básico", subtitle: "Curso Incluido", price: "9.99", backgroundColor: .green, textColor: .white, priceColor: .yellow)
             Spacer()
@@ -67,6 +68,10 @@ struct CuadrosPrecio: View {
                     .offset(x:0, y:-70)
                 }
         }.padding()
+        Spacer()
+        
+        ZStack{
+            
         
         PriceView(title: "Definitivo", subtitle: "Todos Los Cursos Especiales", price: "249.99", backgroundColor: (.black), textColor: .white, priceColor: .orange)
         
@@ -75,8 +80,21 @@ struct CuadrosPrecio: View {
                                 .foregroundColor(.blue)
                                 .padding(8)
                                 .background(Color.orange)
-                .offset(x:0, y:-160)
-        
+                .offset(x:0, y:-70)
+            
+            Image(systemName:"lightbulb")
+                .font(.system(size:33))
+                .foregroundColor(.yellow)
+            .offset(x:100, y:-30)
+            
+            Image(systemName:"lightbulb")
+                .font(.system(size:33))
+                .foregroundColor(.yellow)
+            .offset(x:-100, y:-30)
+            
+            
+        }
+        Spacer()
             }
         }
     }
@@ -112,4 +130,6 @@ struct PriceView: View {
     }
 }
 
-
+//.rotationEffect(.degrees(12), anchor: UnitPoint(x: 0, y: 0))
+//.rotationEffect(.degrees(-45))
+// Image(systemName: "heart.fill")).font(.system(size:44)).foregroundColor(.red).opacity(0.7)
