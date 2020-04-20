@@ -53,8 +53,12 @@ struct ContentView: View {
             
             VStack{
                             Image("FOTO7")
-                                .resizable().frame(.w)
-                                .padding(.all)
+                                .resizable().frame(width: 350)
+                                
+                               
+            }
+            
+            }
                             
             //                scaletoFit mantiene la relación de aspecto pero no llena la pantalla
                             
@@ -64,14 +68,14 @@ struct ContentView: View {
                             
                             HStack{
                                 
-                                Text("4,7").fontWeight(.bold)
+                                Text("4,7").fontWeight(.bold).padding(.leading, 20.0)
                         
                                  Image(systemName:"star")
                                                .font(.system(size:18))
                                                .foregroundColor(.yellow)
                                 Text("(171)")
                                 
-                            }
+                            }.multilineTextAlignment(.leading)
                             Text(" € 10,99").font(.custom("Avenir", size: 18))
                                 .fontWeight(.black)
                                
@@ -80,9 +84,8 @@ struct ContentView: View {
             
         }
         
-    }
-}
 
+}
 
 
 
