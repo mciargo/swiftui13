@@ -14,7 +14,7 @@ struct ContentView: View {
         VStack{
         Image("logo")
         
-    ScrollView {
+    ScrollView (showsIndicators: false){
         VStack{
            
                 Text("Juan Gabriel Gomila")

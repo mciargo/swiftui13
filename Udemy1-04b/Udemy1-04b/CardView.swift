@@ -22,15 +22,16 @@ struct CardView: View {
             Image(ImageName)
             .resizable()
                 .aspectRatio(contentMode: .fit)
-                .padding(.all)
+                
             
             VStack (alignment: .leading){
                 Text(curseTitle)
-                    .font(.system(.title, design: .rounded))
+                    .font(.custom("Avenir", size: 22))
                     .foregroundColor(.primary) /*el primary o secondary color se define en la carpeta infi.plist*/
+                    .fontWeight(.bold)
                     .lineLimit(2)
                 Text(AuthorName)
-                    .font(.custom("Avenir", size: 22))
+                    .font(.custom("Avenir", size: 18))
                     .fontWeight(.bold)
                     .foregroundColor(.secondary)/*el secondary color se define en la carpeta infi.plist*/
                     
@@ -44,7 +45,8 @@ struct CardView: View {
                         .strikethrough()
                 }
                 
-            }.padding(.leading)
+            }
+//            .padding(.leading)
         }.cornerRadius(12).overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(red: 23/255, green: 23/255, blue: 230/255, opacity: 0.5), lineWidth: 2)) /*stroke solo pinta bordes del rectangulo*/
             .padding(.horizontal)
     }

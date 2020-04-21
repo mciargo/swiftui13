@@ -14,6 +14,7 @@
 		DBCB4F12244D3C020078A85E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCB4F11244D3C020078A85E /* Preview Assets.xcassets */; };
 		DBCB4F15244D3C020078A85E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCB4F13244D3C020078A85E /* LaunchScreen.storyboard */; };
 		DBCB4F1D244D3C7C0078A85E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB4F1C244D3C7C0078A85E /* CardView.swift */; };
+		DBCB4F1F244E3BDB0078A85E /* ContentViewHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB4F1E244E3BDB0078A85E /* ContentViewHorizontal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DBCB4F14244D3C020078A85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBCB4F16244D3C020078A85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBCB4F1C244D3C7C0078A85E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DBCB4F1E244E3BDB0078A85E /* ContentViewHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHorizontal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				DBCB4F0A244D3C010078A85E /* SceneDelegate.swift */,
 				DBCB4F1C244D3C7C0078A85E /* CardView.swift */,
 				DBCB4F0C244D3C010078A85E /* ContentView.swift */,
+				DBCB4F1E244E3BDB0078A85E /* ContentViewHorizontal.swift */,
 				DBCB4F0E244D3C020078A85E /* Assets.xcassets */,
 				DBCB4F13244D3C020078A85E /* LaunchScreen.storyboard */,
 				DBCB4F16244D3C020078A85E /* Info.plist */,
@@ -152,6 +155,7 @@
 				DBCB4F09244D3C010078A85E /* AppDelegate.swift in Sources */,
 				DBCB4F0B244D3C010078A85E /* SceneDelegate.swift in Sources */,
 				DBCB4F1D244D3C7C0078A85E /* CardView.swift in Sources */,
+				DBCB4F1F244E3BDB0078A85E /* ContentViewHorizontal.swift in Sources */,
 				DBCB4F0D244D3C010078A85E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
