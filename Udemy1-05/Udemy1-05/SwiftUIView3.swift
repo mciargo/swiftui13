@@ -6,6 +6,10 @@
 //  Copyright © 2020 Mauro Ciargo. All rights reserved.
 //
 
+
+//https://iconos8.es/icons
+
+
 import SwiftUI
 
 struct SwiftUIView3: View {
@@ -20,21 +24,11 @@ struct SwiftUIView3: View {
             }) {
                 HStack{
                     Image(systemName: "square.and.pencil")
-                    Text("Editar")
-                    
+                    Text("  Editar")
                 }
-                .frame(minWidth:0, maxWidth: 200)
-                
-                    .padding(20)
-                    
-                    .background(LinearGradient(gradient:  Gradient(colors: [Color("DarkOcean1"), Color("DarkOcean2")]), startPoint: .leading, endPoint: .trailing))
-                    
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .cornerRadius(30)
-                    .shadow(color: .blue, radius: 20, x: 20, y: 10)
-                
             }
+            .buttonStyle(BasicButtonStyle())
+           
             Spacer()
             
             Button(action: {
@@ -42,21 +36,11 @@ struct SwiftUIView3: View {
             }) {
                 HStack{
                     Image(systemName: "trash")
-                    Text("Eliminar")
-                    
+                    Text("  Eliminar")
                 }
-                .frame(minWidth:0, maxWidth: 200)
-                
-                    .padding(20)
-                    
-                    .background(LinearGradient(gradient:  Gradient(colors: [Color("DarkOcean1"), Color("DarkOcean2")]), startPoint: .leading, endPoint: .trailing))
-                    
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .cornerRadius(30)
-                    .shadow(color: .blue, radius: 20, x: 20, y: 10)
-                
             }
+            .buttonStyle(BasicButtonStyle())
+           
             Spacer()
             
             Button(action: {
@@ -64,24 +48,28 @@ struct SwiftUIView3: View {
             }) {
                 HStack{
                     Image(systemName: "square.and.arrow.up")
-                    Text("Compartir")
-                    
+                    Text("  Compartir 2")
                 }
-                .frame(minWidth:0, maxWidth: 200)
-                
-                    .padding(20)
-                    
-                    .background(LinearGradient(gradient:  Gradient(colors: [Color("DarkOcean1"), Color("DarkOcean2")]), startPoint: .leading, endPoint: .trailing))
-                    
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .cornerRadius(30)
-                    .shadow(color: .blue, radius: 20, x: 20, y: 10)
-                
             }
+            .buttonStyle(BasicButtonStyle())
+            
             Spacer()
+            
+            .buttonStyle(BasicButtonStyle())
+            
+             Spacer()
+             
+             Button(action: {
+                 print("boton 2 hola pulsado")
+             }) {
+                 HStack{
+                     Image(systemName: "square.and.arrow.up")
+                     Text("   ENVIAR")
+                 }
+             }
+             .buttonStyle(BasicButtonStyle())
+             Spacer()
         }
-        
     }
 }
 
@@ -93,7 +81,25 @@ struct SwiftUIView3_Previews: PreviewProvider {
 
 
 struct BasicButtonStyle: ButtonStyle{
-    typealias Body = <#type#>
+    
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+        
+            .frame(minWidth:0, maxWidth: 200)
+            .padding(20)
+            .background(LinearGradient(gradient:  Gradient(colors: [Color("DarkOcean1"), Color("DarkOcean2")]), startPoint: .leading, endPoint: .trailing))
+            
+            .foregroundColor(.white)
+            .font(.title)
+            .cornerRadius(30)
+            .shadow(color: .blue, radius: 5, x: 20, y: 10)
+            .padding(.horizontal, 15)
+            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
+            
+//            .rotationEffect(_ angle: .degrees(45), anchor: UnitPoint = .center)
+   
+    }
+    
     
     
     
