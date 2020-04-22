@@ -14,6 +14,7 @@
 		DBCB4F36244E7C110078A85E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCB4F35244E7C110078A85E /* Preview Assets.xcassets */; };
 		DBCB4F39244E7C110078A85E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCB4F37244E7C110078A85E /* LaunchScreen.storyboard */; };
 		DBCB4F43244F6DBB0078A85E /* SwiftUIView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB4F42244F6DBB0078A85E /* SwiftUIView2.swift */; };
+		DBCB4F45244FC1800078A85E /* SwiftUIView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB4F44244FC1800078A85E /* SwiftUIView3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DBCB4F38244E7C110078A85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBCB4F3A244E7C110078A85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBCB4F42244F6DBB0078A85E /* SwiftUIView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2.swift; sourceTree = "<group>"; };
+		DBCB4F44244FC1800078A85E /* SwiftUIView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				DBCB4F2C244E7C0E0078A85E /* AppDelegate.swift */,
 				DBCB4F2E244E7C0E0078A85E /* SceneDelegate.swift */,
 				DBCB4F42244F6DBB0078A85E /* SwiftUIView2.swift */,
+				DBCB4F44244FC1800078A85E /* SwiftUIView3.swift */,
 				DBCB4F30244E7C0E0078A85E /* ContentView.swift */,
 				DBCB4F32244E7C110078A85E /* Assets.xcassets */,
 				DBCB4F37244E7C110078A85E /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			files = (
 				DBCB4F2D244E7C0E0078A85E /* AppDelegate.swift in Sources */,
 				DBCB4F43244F6DBB0078A85E /* SwiftUIView2.swift in Sources */,
+				DBCB4F45244FC1800078A85E /* SwiftUIView3.swift in Sources */,
 				DBCB4F2F244E7C0E0078A85E /* SceneDelegate.swift in Sources */,
 				DBCB4F31244E7C0E0078A85E /* ContentView.swift in Sources */,
 			);

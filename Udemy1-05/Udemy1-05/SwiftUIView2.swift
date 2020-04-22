@@ -62,6 +62,28 @@ struct SwiftUIView2: View {
                                
                     }
                     Spacer()
+                    Button(action: {
+                        print("boton 2 hola pulsado")
+                    }) {
+                        HStack{
+                            Image(systemName: "trash")
+                            Text("Eliminar")
+                            
+                        }
+                        .frame(minWidth:0, maxWidth: 200)
+//                            .frame(minWidth:0, maxWidth: 200) -> va de punta a punta del horizontal
+                            
+                        .padding(20)
+                            
+                        .background(LinearGradient(gradient:  Gradient(colors: [Color("DarkOcean1"), Color("DarkOcean2")]), startPoint: .leading, endPoint: .trailing))
+                            
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .cornerRadius(30)
+                        .shadow(color: .blue, radius: 20, x: 20, y: 10)
+                        
+                    }
+                     Spacer()
                 }
                 
                 
