@@ -1,20 +1,16 @@
 //
-//  SwiftUIView3.swift
-//  Udemy1-05
+//  ContentView.swift
+//  udemy1-06 STATE
 //
-//  Created by Mauro Ciargo on 4/21/20.
+//  Created by Mauro Ciargo on 4/22/20.
 //  Copyright © 2020 Mauro Ciargo. All rights reserved.
 //
 
-
-//https://iconos8.es/icons
-
-
 import SwiftUI
 
-struct SwiftUIView3: View {
+struct ContentView: View {
+    
     var body: some View {
-                        
         VStack{
 
             Spacer()
@@ -63,8 +59,8 @@ struct SwiftUIView3: View {
                  print("boton 2 hola pulsado")
              }) {
                  HStack{
-                     Image(systemName: "person.badge.plus.fill")
-                     Text("   Pasajeros")
+                     Image(systemName: "square.and.arrow.up")
+                     Text("   ENVIAR")
                  }
              }
              .buttonStyle(BasicButtonStyle())
@@ -73,13 +69,11 @@ struct SwiftUIView3: View {
     }
 }
 
-struct SwiftUIView3_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView3()
+        ContentView()
     }
 }
-
-
 struct BasicButtonStyle: ButtonStyle{
     
     func makeBody(configuration: Self.Configuration) -> some View {
@@ -96,6 +90,5 @@ struct BasicButtonStyle: ButtonStyle{
             .padding(.horizontal, 15)
             .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
             
-    }
-    
+}
 }
