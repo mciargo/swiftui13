@@ -27,8 +27,6 @@ struct ContentView: View {
                 .frame(width:200, height:100)
                 .background(FunnyLabel(percCircle: 0.9).fill(Color.blue))
 
-            
-            
             Path(){ path in
                 path.move(to: CGPoint(x: 60, y: 130))
                 path.addQuadCurve(to: CGPoint(x:200, y:130),control: CGPoint(x:130, y: 60))
@@ -49,14 +47,10 @@ struct ContentView: View {
                         clockwise: true) /* si coloco false me dibuja el pñunto faltante*/
 
         }.fill(Color.yellow)
-    
-           
+  
         }
-        
 }
 
-    
-    
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

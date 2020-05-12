@@ -31,11 +31,8 @@ struct ContentView: View {
                         RoundedRectangle(cornerRadius: 50)
                             .stroke(Color.green, lineWidth: 5)
                 )
-
-                
             }*/
-            
-            
+
             Button(action: {
                 print("Editar pulsado")
             }){
@@ -72,8 +69,6 @@ struct ContentView: View {
             }
         .buttonStyle(BasicButtonStyle())
         }
-        
-        
     }
 }
 
@@ -82,9 +77,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
 struct BasicButtonStyle: ButtonStyle{
-    
     
     func makeBody(configuration: Self.Configuration) -> some View{
         configuration.label
@@ -99,6 +92,4 @@ struct BasicButtonStyle: ButtonStyle{
             .padding(.horizontal, 15)
             .scaleEffect(configuration.isPressed ? 0.8 : 1.0)
     }
-    
-    
 }

@@ -28,7 +28,6 @@ struct ContentView: View {
             }else{
                 CourseRoundImageRow(course: self.courses[idx])
             }
-           
         }
     }
 }

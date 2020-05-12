@@ -62,7 +62,6 @@ struct ContentView: View {
             }
             .navigationBarTitle("Cursos online de JB", displayMode: .automatic)
         }
-        
     }
 }
 
@@ -71,7 +70,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
 
 struct Course: Identifiable {
     var id = UUID()

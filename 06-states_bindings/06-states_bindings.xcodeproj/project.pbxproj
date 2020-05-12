@@ -61,11 +61,11 @@
 				01C5415823F7E98D0079633F /* AppDelegate.swift */,
 				01C5415A23F7E98D0079633F /* SceneDelegate.swift */,
 				01C5415C23F7E98D0079633F /* ContentView.swift */,
+				01C5416C23F7F0B70079633F /* ClickView.swift */,
 				01C5415E23F7E98F0079633F /* Assets.xcassets */,
 				01C5416323F7E98F0079633F /* LaunchScreen.storyboard */,
 				01C5416623F7E98F0079633F /* Info.plist */,
 				01C5416023F7E98F0079633F /* Preview Content */,
-				01C5416C23F7F0B70079633F /* ClickView.swift */,
 			);
 			path = "06-states_bindings";
 			sourceTree = "<group>";

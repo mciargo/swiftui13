@@ -69,13 +69,12 @@
 				01C541A223FB1F7C0079633F /* AppDelegate.swift */,
 				01C541A423FB1F7C0079633F /* SceneDelegate.swift */,
 				01C541A623FB1F7C0079633F /* ContentView.swift */,
+				01C541BA23FBFDE40079633F /* ProgressView.swift */,
+				01C541B823FBFA2B0079633F /* LoadingBarView.swift */,
+				01C541AA23FB1F7E0079633F /* Preview Content */,
 				01C541A823FB1F7E0079633F /* Assets.xcassets */,
 				01C541AD23FB1F7E0079633F /* LaunchScreen.storyboard */,
 				01C541B023FB1F7E0079633F /* Info.plist */,
-				01C541AA23FB1F7E0079633F /* Preview Content */,
-				01C541B623FBF6530079633F /* LoadingView.swift */,
-				01C541B823FBFA2B0079633F /* LoadingBarView.swift */,
-				01C541BA23FBFDE40079633F /* ProgressView.swift */,
 				01C541BC23FC00C50079633F /* DotsLoadingView.swift */,
 				01C541BE23FC2C160079633F /* MorphView.swift */,
 			);
@@ -85,6 +84,7 @@
 		01C541AA23FB1F7E0079633F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				01C541B623FBF6530079633F /* LoadingView.swift */,
 				01C541AB23FB1F7E0079633F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";

@@ -33,10 +33,7 @@ struct ContentViewHorizontal: View {
                 .foregroundColor(.gray)
                 
                  }
-                
-            
-            
-            
+             
             ScrollView (.horizontal, showsIndicators: false) {
                 
                     
@@ -76,12 +73,12 @@ struct ContentViewHorizontal: View {
                 
                 CardView(ImageName: "deep", AuthorName: "Juan Gabriel Gomila Salas", curseTitle: "Deep Learning con Tensorflow para Machine Learning e IA", originalPrice: "  US$ 89,99", discountPrice: "  US$ 10,99")
                     .frame(width: 300, height: 270)
-            }
+                    }
             
-            }
                 }
             }
         }
+    }
 
 struct ContentViewHorizontal_Previews: PreviewProvider {
     static var previews: some View {
