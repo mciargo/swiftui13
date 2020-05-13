@@ -20,7 +20,7 @@ struct ContentView: View {
         Salsa(name: "Passata di Pomodoro", image: "passata", recipe: "La passata di pomodoro è una delle conserve più preparate, specialmente nelle regioni del meridione d’Italia, dove il suo largo uso quotidiano ne ha fatto la regina delle conserve, resa ancora più speciale dal suo inconfondibile sapore mediterraneo. Preparare la passata di pomodoro è molto semplice: basta osservare alcune piccole ma importanti regole per un riuscita ottimale di questa conserva, in grado di conservare tutto il sapore dei pomodori come appena raccolti.", imageModo: "pass-modo"),
         Salsa(name: "Salsa alle Noci", image: "noci", recipe: "Salse e ripieni sono dei grandi classici della gastronomia Ligure, in particolar modo quelli a base di semi oleosi come noci pinoli e frutta secca, come il famoso pesto alla genovese. Questa salsa alle noci rientra a pieno diritto nei pezzi forti della tradizione culinaria ligure. Si caratterizza per il un sapore ricco ma delicato, con note rustiche ed intense, ed è ideale per essere utilizzata come condimento di molteplici primi piatti. L’abbinamento più tradizionale di questa salsa corposa e profumata? Con un grande classico della cucina genovese, i pansoti, ma non è infrequente che accompagni anche le trofie di castagne ed i corzetti. Per i più golosi provatela anche semplice sopra ad una fetta di pane tostato: da leccarsi i baffi!", imageModo: "noci-modo")
     ]
-
+/*
     init() {
         let appearance = UINavigationBarAppearance()
         appearance.largeTitleTextAttributes = [.font: UIFont(name: "Avenir", size:32)!, .foregroundColor: ( UIColor.systemOrange) ] /*para el titulo grfande*/
@@ -42,7 +42,7 @@ struct ContentView: View {
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
-    
+    */
     var body: some View {
         
         NavigationView {
@@ -51,6 +51,7 @@ struct ContentView: View {
                     
                 FilaSalsa(salsa: salsa)
                 }
+                
             }
             .navigationBarTitle("Recetas - Salsas")
         }

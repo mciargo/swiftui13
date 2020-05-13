@@ -13,9 +13,10 @@ struct DetailView: View {
     var salsa: Salsa
     
     var body: some View {
+        
         VStack {
             Image(salsa.image).resizable().aspectRatio(contentMode: .fill)
-                .frame(width: 450, height: 150)
+                .frame(width: 450, height: 200)
                 .clipped()
             
             Text(salsa.name).font(.system(.title, design: .rounded))
@@ -25,10 +26,41 @@ struct DetailView: View {
             Image(salsa.imageModo).resizable().aspectRatio(contentMode: .fill)
             .frame(width: 400, height: 100)
                 .clipped().padding(.vertical)
+            
             Spacer()
+            
         }
+        .navigationBarTitle("", displayMode: .inline)
+//            .edgesIgnoringSafeArea(.top)
+//            .navigationBarBackButtonHidden(true)
+//            .navigationBarItems(leading:
+//            Button(action: {
+////                navegar a  pantalla previa
+//            }, label: {
+//                Image(systemName: "arrow.left.circle.fill")
+//                    .font(.title)
+//                    .foregroundColor(.blue)
+//            }
+            
+            
+//            ))
+        
+                /*naVEGAR A LA PANTALLA PREVIA*/
+            
+//                Image(systemName: "arrow.left.circle.fill")
+//                    .font(.title)
+//                    .foregroundColor(.white)
+            }
+        
+        
+        
+        /* esto se coloca para que la barra de navegacion se reduzca al monimo cuando voy a la vista desde contentview*/
+        
+      
+        
+        
     }
-}
+
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {

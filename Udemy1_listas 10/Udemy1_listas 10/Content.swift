@@ -64,9 +64,7 @@ struct FilaSalsa: View {
                 .cornerRadius(30))
             
             
-//                .overlay(RoundedRectangle(cornerRadius: 25)
-//                                    .foregroundColor(.gray)
-//                                    .opacity(0.45))
+
             
             Text(salsa.name) /* la variable salsa se pone en minuscula aunque fue declarada en mayuscula*/
         }
