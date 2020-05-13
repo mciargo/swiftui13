@@ -10,55 +10,56 @@ import SwiftUI
 
 struct DetailView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     var salsa: Salsa
     
     var body: some View {
         
-        VStack {
-            Image(salsa.image).resizable().aspectRatio(contentMode: .fill)
-                .frame(width: 450, height: 200)
-                .clipped()
-            
-            Text(salsa.name).font(.system(.title, design: .rounded))
-                .fontWeight(.black)
-            Text("PRESENTACIÓN").fontWeight(.black).padding(40)
-            Text(salsa.recipe).font(.system(.body, design: .rounded)).padding(30)
-            Image(salsa.imageModo).resizable().aspectRatio(contentMode: .fill)
-            .frame(width: 400, height: 100)
-                .clipped().padding(.vertical)
-            
-            Spacer()
-            
-        }
-        .navigationBarTitle("", displayMode: .inline)
-//            .edgesIgnoringSafeArea(.top)
-//            .navigationBarBackButtonHidden(true)
-//            .navigationBarItems(leading:
-//            Button(action: {
+        ScrollView {
+            VStack {
+                Image(salsa.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 450, height: 50)
+    //                .clipped()
+                    .edgesIgnoringSafeArea(.top)
+                    .padding(.bottom, 30)
+                Text(salsa.name).font(.system(.title, design: .rounded))
+                    .fontWeight(.black)
+                    .foregroundColor(.white)
+                    .padding(.top, 30)
+                Text("PRESENTACIÓN").fontWeight(.black).padding(.top, 90)
+                Text(salsa.recipe).font(.system(.body, design: .rounded))
+                .lineLimit(nil)
+                    .padding(30)
+                Image(salsa.imageModo).resizable().aspectRatio(contentMode: .fill)
+                .frame(width: 400, height: 100)
+                    .clipped().padding(.vertical)
+                Spacer()
+            }
+//        .navigationBarTitle("", displayMode: .inline)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: Button(action: {
+                
 ////                navegar a  pantalla previa
-//            }, label: {
-//                Image(systemName: "arrow.left.circle.fill")
-//                    .font(.title)
-//                    .foregroundColor(.blue)
-//            }
-            
-            
-//            ))
-        
+                self.presentationMode.wrappedValue.dismiss()
+                
+            }, label: {
+                Image(systemName: "arrow.left.circle.fill")
+                    .font(.title)
+                    .foregroundColor(.yellow)
+            }
+            ))
                 /*naVEGAR A LA PANTALLA PREVIA*/
             
 //                Image(systemName: "arrow.left.circle.fill")
 //                    .font(.title)
 //                    .foregroundColor(.white)
-            }
-        
-        
-        
+            }/*fin de scroll*/
+    }
+
         /* esto se coloca para que la barra de navegacion se reduzca al monimo cuando voy a la vista desde contentview*/
-        
-      
-        
-        
+   
     }
 
 
